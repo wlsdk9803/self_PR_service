@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800&display=swap");
+
+body {
+  font-family: "Montserrat";
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+  box-sizing: border-box;
+  background-image: linear-gradient(
+    -225deg,
+    #69eacb 0%,
+    #eaccf8 48%,
+    #b7c9d9,
+    #6654f1 100%
+  );
+  background-size: 300% 300%;
+  width: 1500px;
+  height: 700px;
+  background-repeat: no-repeat;
+  animation: backgroundChange 10s ease-in-out infinite;
+  z-index: 2;
+}
+@keyframes backgroundChange {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(20, 1fr);
+  gap: 2px;
+}
+a {
+  color: #ebebeb;
+  text-decoration: none;
+}
+.balloon span {
+  display: inline-block;
+  padding: 10px;
+  background: #000;
+  border-radius: 20px;
+  z-index: 1;
+}
+.balloon:nth-child(1) {
+  grid-column: 2/3;
+  grid-row: 4/6;
+  z-index: 1;
+}
+.balloon:nth-child(2) {
+  grid-column: 2/3;
+  grid-row: 6/8;
+  z-index: 1;
+}
+.balloon:nth-child(3) {
+  grid-column: 2/3;
+  grid-row: 8/10;
+  z-index: 1;
+}
+.balloon:nth-child(4) {
+  grid-column: 2/3;
+  grid-row: 10/12;
+  z-index: 1;
+}
+.balloon:nth-child(5) {
+  grid-column: 2/3;
+  grid-row: 12/14;
+  z-index: 1;
+}
+.balloon:nth-child(6) {
+  grid-column: 2/3;
+  grid-row: 14/16;
+  z-index: 1;
+}
+.textbox:nth-child(7) {
+  grid-column: 3/10;
+  grid-row: 3/18;
+  width: 1000px;
+  height: 540px;
+  border: 1px double #ebebeb;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(150, 0, 100, 0.3);
+  background-color: white;
+  z-index: 1;
+}
+.float-wrap {
+  overflow: visible;
+}
+.picture {
+  position: relative;
+  left: 70px;
+  top: 90px;
+  float: left;
+}
+section {
+  position: relative;
+  right: 100px;
+  top: 200px;
+  float: right;
+}
+.sns {
+  width: 30px;
+  height: 30px;
+  float: right;
+  position: relative;
+  left: 1150px;
+  top: 650px;
+  margin-right: 15px;
+}
