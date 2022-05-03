@@ -36,7 +36,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(10, 10%);
-  grid-template-rows: repeat(20, 1fr);
+  grid-template-rows: repeat(20, 35px);
   gap: 2px;
 }
 a {
@@ -83,8 +83,6 @@ a {
 .textbox:nth-child(7) {
   grid-column: 3/10;
   grid-row: 3/18;
-  width: 1000px;
-  height: 540px;
   border: 1px double #ebebeb;
   border-radius: 20px;
   box-shadow: 5px 5px 20px 5px rgba(150, 0, 100, 0.3);
@@ -97,7 +95,7 @@ a {
 .picture {
   position: relative;
   left: 70px;
-  top: 90px;
+  top: 100px;
   float: left;
 }
 section {
@@ -106,12 +104,16 @@ section {
   top: 200px;
   float: right;
 }
+.sns-box:nth-child(8) {
+  grid-column: 9/10;
+  grid-row: 18/19;
+  border: none;
+  padding-left: 30px;
+  z-index: 1;
+}
 .sns {
   width: 30px;
   height: 30px;
-  float: right;
-  position: relative;
-  left: 1150px;
-  top: 650px;
-  margin-right: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
 }
